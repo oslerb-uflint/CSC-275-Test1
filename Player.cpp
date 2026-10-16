@@ -16,7 +16,7 @@ void Player::inputPlayerNumbers() {
             cin>>choice;
             if (cin.fail()) {
                 cin.clear();
-                cin.sync();
+                cin.ignore(100,'\n');
                 cout <<endl<< "Invalid data input! Try again. ";
             } else if (choice < 1 || choice > 80) {
                 cout << endl<<choice << " is out of range! Try again. ";
